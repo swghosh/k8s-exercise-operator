@@ -7,4 +7,13 @@ layout:
 - go.kubebuilder.io/v4
 projectName: k8s-exercise-operator
 repo: github.com/swghosh/k8s-exercise-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: example.com
+  group: cache
+  kind: Memcached
+  path: github.com/swghosh/k8s-exercise-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"
