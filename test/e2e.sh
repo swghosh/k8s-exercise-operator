@@ -358,13 +358,13 @@ else
 fi
 
 # ===================================================================
-# TEST 18: Memcached with size at boundary — exactly max (10)
+# TEST 18: Memcached with size at boundary — exactly max (5)
 # ===================================================================
-info "TEST 18: Verify Deployment is created with max size (10)"
-if wait_for_condition "deployment/test-max-dep" "{.spec.replicas}" "10" 30; then
-  ok "TEST 18: Deployment with 10 size created successfully"
+info "TEST 18: Verify Deployment is created with max size (5)"
+if wait_for_condition "deployment/test-max-dep" "{.spec.replicas}" "5" 30; then
+  ok "TEST 18: Deployment with 5 size created successfully"
 else
-  fail "TEST 18: Deployment with 10 size not created"
+  fail "TEST 18: Deployment with 5 size not created"
 fi
 
 # ===================================================================
